@@ -12,14 +12,6 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const store = configureStore ();
 
-store.dispatch(addExpense({ description:'Cocaine bill', amount: 45000000, createdAt:1001 }));
-store.dispatch(addExpense({ description:'MDMA bill', amount: 300000000, createdAt:1000 }));
-store.dispatch(addExpense({ description:'Charlie Sheen bill', amount: 40000, createdAt:999999 }));
-
-
-
-const state = store.getState();
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
 
 console.log(visibleExpenses);
 
